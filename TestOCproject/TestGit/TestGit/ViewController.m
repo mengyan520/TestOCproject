@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"下属一第一次操作1");
+    NSLog(@"下属二第一次操作");
     
 }
 
