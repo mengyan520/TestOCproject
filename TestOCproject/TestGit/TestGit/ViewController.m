@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"下属一第一次操作");
+    NSLog(@"创建dev分支");
+    NSLog(@"创建dev分支");
 }
 
 
