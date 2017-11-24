@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import <Masonry.h>
 @interface ViewController ()
-
+@property (nonatomic, strong) UIView *redView;
 @end
 
 @implementation ViewController
@@ -21,6 +21,13 @@
     NSLog(@"下属二第一次操作");
     NSLog(@"下属二第二次操作");
     NSLog(@"下属一第三次操作");
+    self.redView= [[UIView alloc]init];
+    self.redView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.redView];
+    [self.redView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.mas_equalTo(self.view);
+        make.height.mas_equalTo(200);
+    }];
 }
 
 
